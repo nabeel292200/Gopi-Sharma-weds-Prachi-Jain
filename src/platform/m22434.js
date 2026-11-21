@@ -24,7 +24,7 @@ let d = '9c3fad15-3a8c-4eba-bb4e-ec65d5cf5306',
     ganapati: '/images/ganapati.png',
     ganapatiColor: '/images/ganapati_color.png',
   },
-  f = '2026-12-12T19:30:00+05:30',
+  f = '2026-12-11T09:00:00+05:30',
   m = Date.parse(f),
   gDay1 = {
     title: 'Chaak, Haldi Carnival & DJ Night — Prachi & Gopi',
@@ -786,7 +786,7 @@ function ae() {
   })
 }
 
-function JainEmblem({ size = 13, delay = 0.1 }) {
+function JainSwastik({ size = 12, delay = 0.1 }) {
   return (0, n.jsxs)('div', {
     className: 'aa-p',
     style: {
@@ -806,71 +806,65 @@ function JainEmblem({ size = 13, delay = 0.1 }) {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          background: 'radial-gradient(closest-side, rgba(255, 225, 140, 0.75), rgba(255, 225, 140, 0))',
+          background: 'radial-gradient(closest-side, rgba(255, 235, 175, 0.7), rgba(255, 235, 175, 0))',
         },
       }),
       (0, n.jsxs)('svg', {
-        viewBox: '0 0 100 120',
+        viewBox: '0 0 100 115',
         style: {
           width: w(size),
-          height: w(size * 1.2),
+          height: w(size * 1.15),
           display: 'block',
           position: 'relative',
           zIndex: 2,
-          filter: 'drop-shadow(0 3px 8px rgba(140, 90, 30, 0.3))',
+          filter: 'drop-shadow(0 2px 6px rgba(140, 90, 30, 0.18))',
         },
         children: [
+          // Siddhashila crescent arc & Siddha dot at top
           (0, n.jsx)('path', {
-            d: 'M35 12 Q50 20 65 12 Q50 16 35 12 Z',
-            fill: '#b58d4f',
+            d: 'M34 14 Q50 22 66 14 Q50 17 34 14 Z',
+            fill: '#b8914f',
           }),
-          (0, n.jsx)('circle', { cx: '50', cy: '8', r: '2.5', fill: '#b58d4f' }),
-          (0, n.jsx)('circle', { cx: '40', cy: '22', r: '2.5', fill: '#8b1e2a' }),
-          (0, n.jsx)('circle', { cx: '50', cy: '20', r: '2.5', fill: '#8b1e2a' }),
-          (0, n.jsx)('circle', { cx: '60', cy: '22', r: '2.5', fill: '#8b1e2a' }),
+          (0, n.jsx)('circle', { cx: '50', cy: '9', r: '2.5', fill: '#8b1e2a' }),
+          // Three Dots (Ratnatraya: Samyak Darshana, Samyak Jnana, Samyak Charitra)
+          (0, n.jsx)('circle', { cx: '38', cy: '25', r: '2.5', fill: '#8b1e2a' }),
+          (0, n.jsx)('circle', { cx: '50', cy: '23', r: '2.5', fill: '#8b1e2a' }),
+          (0, n.jsx)('circle', { cx: '62', cy: '25', r: '2.5', fill: '#8b1e2a' }),
+          // Auspicious Clockwise Traditional Swastika
           (0, n.jsx)('path', {
-            d: 'M50 30 V42 M44 30 H50 M50 42 H56 M44 36 H56 M44 36 V42 M56 30 V36',
+            d: 'M50 35 V75 M30 55 H70 M50 35 H70 M70 55 V75 M50 75 H30 M30 55 V35',
             fill: 'none',
-            stroke: '#b58d4f',
-            strokeWidth: '2.4',
+            stroke: '#b8914f',
+            strokeWidth: '3.4',
             strokeLinecap: 'round',
             strokeLinejoin: 'round',
           }),
-          (0, n.jsx)('path', {
-            d: 'M34 105 C32 95 32 80 34 70 C34 58 35 50 37 46 C38 44 41 44 42 47 C44 52 44 60 44 62 C44 54 45 44 47 42 C48 40 51 40 52 43 C53 48 53 58 53 60 C53 52 55 45 57 43 C58 41 61 41 62 44 C63 49 63 60 63 63 C64 56 66 52 68 50 C69 49 72 49 73 52 C74 57 73 70 71 80 C70 87 68 95 65 105 Z',
-            fill: 'rgba(255, 250, 240, 0.92)',
-            stroke: '#b58d4f',
-            strokeWidth: '2',
-            strokeLinecap: 'round',
-            strokeLinejoin: 'round',
-          }),
-          (0, n.jsx)('path', {
-            d: 'M34 78 C30 74 24 72 23 76 C22 80 27 86 34 92',
-            fill: 'rgba(255, 250, 240, 0.92)',
-            stroke: '#b58d4f',
-            strokeWidth: '2',
-            strokeLinecap: 'round',
-          }),
-          (0, n.jsx)('circle', { cx: '51', cy: '77', r: '12', fill: '#fff9ee', stroke: '#8b1e2a', strokeWidth: '1.6' }),
-          (0, n.jsx)('circle', { cx: '51', cy: '77', r: '4', fill: '#8b1e2a' }),
-          Array.from({ length: 12 }, (_, i) => {
-            let angle = (i * 30 * Math.PI) / 180
-            let x1 = 51 + 4 * Math.cos(angle)
-            let y1 = 77 + 4 * Math.sin(angle)
-            let x2 = 51 + 12 * Math.cos(angle)
-            let y2 = 77 + 12 * Math.sin(angle)
-            return (0, n.jsx)('line', { x1, y1, x2, y2, stroke: '#b58d4f', strokeWidth: '0.9' }, i)
-          }),
-          (0, n.jsx)('circle', { cx: '51', cy: '77', r: '1.6', fill: '#fff' }),
+          // 4 Auspicious dots in the 4 quadrants
+          (0, n.jsx)('circle', { cx: '40', cy: '45', r: '1.6', fill: '#8b1e2a' }),
+          (0, n.jsx)('circle', { cx: '60', cy: '45', r: '1.6', fill: '#8b1e2a' }),
+          (0, n.jsx)('circle', { cx: '40', cy: '65', r: '1.6', fill: '#8b1e2a' }),
+          (0, n.jsx)('circle', { cx: '60', cy: '65', r: '1.6', fill: '#8b1e2a' }),
+          // Sacred Text Below
           (0, n.jsx)('text', {
             x: '50',
-            y: '116',
+            y: '94',
             textAnchor: 'middle',
             fontFamily: j,
-            fontSize: '5.4',
+            fontSize: '5.8',
             fontWeight: '600',
             letterSpacing: '0.4px',
             fill: '#8b1e2a',
+            children: '|| जय जिनेंद्र ||',
+          }),
+          (0, n.jsx)('text', {
+            x: '50',
+            y: '104',
+            textAnchor: 'middle',
+            fontFamily: j,
+            fontSize: '4.8',
+            fontWeight: '500',
+            letterSpacing: '0.2px',
+            fill: '#7d5f2e',
             children: 'परस्परोपग्रहो जीवानाम्',
           }),
         ],
@@ -878,7 +872,8 @@ function JainEmblem({ size = 13, delay = 0.1 }) {
     ],
   })
 }
-function GaneshaEmblem({ size = 13, delay = 0.1 }) {
+
+function PastelGanesha({ size = 12, delay = 0.1 }) {
   return (0, n.jsxs)('div', {
     className: 'aa-p',
     style: {
@@ -898,36 +893,176 @@ function GaneshaEmblem({ size = 13, delay = 0.1 }) {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          background: 'radial-gradient(closest-side, rgba(255, 225, 140, 0.75), rgba(255, 225, 140, 0))',
+          background: 'radial-gradient(closest-side, rgba(255, 235, 175, 0.7), rgba(255, 235, 175, 0))',
         },
       }),
-      (0, n.jsx)('img', {
-        src: p.ganapatiColor,
-        alt: 'Lord Ganesha Blessings',
+      (0, n.jsxs)('svg', {
+        viewBox: '0 0 100 115',
         style: {
           width: w(size),
-          height: 'auto',
+          height: w(size * 1.15),
           display: 'block',
           position: 'relative',
           zIndex: 2,
-          filter: 'drop-shadow(0 4px 12px rgba(140, 90, 30, 0.35))',
+          filter: 'drop-shadow(0 2px 6px rgba(140, 90, 30, 0.18))',
         },
-      }),
-      (0, n.jsx)('div', {
-        style: {
-          fontFamily: j,
-          fontSize: w(2.8),
-          fontWeight: '600',
-          letterSpacing: '0.08em',
-          color: '#8b1e2a',
-          marginTop: w(0.4),
-        },
-        children: 'शुभ लाभ',
+        children: [
+          (0, n.jsxs)('defs', {
+            children: [
+              (0, n.jsxs)('linearGradient', {
+                id: 'aa-pg-gold',
+                x1: '0',
+                y1: '0',
+                x2: '1',
+                y2: '1',
+                children: [
+                  (0, n.jsx)('stop', { offset: '0%', stopColor: '#f7ebd2' }),
+                  (0, n.jsx)('stop', { offset: '50%', stopColor: '#d6b272' }),
+                  (0, n.jsx)('stop', { offset: '100%', stopColor: '#ba904c' }),
+                ],
+              }),
+              (0, n.jsxs)('linearGradient', {
+                id: 'aa-pg-body',
+                x1: '0',
+                y1: '0',
+                x2: '0',
+                y2: '1',
+                children: [
+                  (0, n.jsx)('stop', { offset: '0%', stopColor: '#fdf6ee' }),
+                  (0, n.jsx)('stop', { offset: '60%', stopColor: '#f7e7da' }),
+                  (0, n.jsx)('stop', { offset: '100%', stopColor: '#edd3c4' }),
+                ],
+              }),
+              (0, n.jsxs)('linearGradient', {
+                id: 'aa-pg-ear',
+                x1: '0',
+                y1: '0',
+                x2: '1',
+                y2: '0',
+                children: [
+                  (0, n.jsx)('stop', { offset: '0%', stopColor: '#f5e3d7' }),
+                  (0, n.jsx)('stop', { offset: '100%', stopColor: '#ebd0c5' }),
+                ],
+              }),
+            ],
+          }),
+          // Ganesha Crown (Mukut) in soft pastel gold
+          (0, n.jsx)('path', {
+            d: 'M38 28 L50 10 L62 28 Q50 25 38 28 Z',
+            fill: 'url(#aa-pg-gold)',
+            stroke: '#b48a4a',
+            strokeWidth: '1.2',
+          }),
+          (0, n.jsx)('circle', { cx: '50', cy: '8', r: '2.5', fill: '#c45d55' }),
+          (0, n.jsx)('circle', { cx: '50', cy: '19', r: '2.0', fill: '#fdf6ee' }),
+          // Left Ear (viewer left)
+          (0, n.jsx)('path', {
+            d: 'M38 34 C24 32 18 42 22 55 C26 62 34 60 36 56',
+            fill: 'url(#aa-pg-ear)',
+            stroke: '#b48a4a',
+            strokeWidth: '1.4',
+            strokeLinecap: 'round',
+          }),
+          // Right Ear (viewer right)
+          (0, n.jsx)('path', {
+            d: 'M62 34 C76 32 82 42 78 55 C74 62 66 60 64 56',
+            fill: 'url(#aa-pg-ear)',
+            stroke: '#b48a4a',
+            strokeWidth: '1.4',
+            strokeLinecap: 'round',
+          }),
+          // Face & Head in soft pastel peach
+          (0, n.jsx)('ellipse', {
+            cx: '50',
+            cy: '44',
+            rx: '14',
+            ry: '15',
+            fill: 'url(#aa-pg-body)',
+            stroke: '#b48a4a',
+            strokeWidth: '1.4',
+          }),
+          // Tilak / Trishul on Forehead
+          (0, n.jsx)('path', {
+            d: 'M46 32 Q50 36 54 32 Q50 34 46 32 Z',
+            fill: '#c45d55',
+          }),
+          (0, n.jsx)('line', {
+            x1: '50',
+            y1: '28',
+            x2: '50',
+            y2: '38',
+            stroke: '#c45d55',
+            strokeWidth: '1.8',
+            strokeLinecap: 'round',
+          }),
+          (0, n.jsx)('circle', { cx: '50', cy: '40', r: '1.5', fill: '#b48a4a' }),
+          // Eyes in gentle soft closed curves
+          (0, n.jsx)('path', {
+            d: 'M41 43 Q44 41 47 43',
+            fill: 'none',
+            stroke: '#6b4d36',
+            strokeWidth: '1.2',
+            strokeLinecap: 'round',
+          }),
+          (0, n.jsx)('path', {
+            d: 'M53 43 Q56 41 59 43',
+            fill: 'none',
+            stroke: '#6b4d36',
+            strokeWidth: '1.2',
+            strokeLinecap: 'round',
+          }),
+          // Trunk curving to left with delicate folds
+          (0, n.jsx)('path', {
+            d: 'M48 50 Q48 64 38 68 Q33 70 33 65 Q33 61 38 61 Q42 61 43 51',
+            fill: 'url(#aa-pg-body)',
+            stroke: '#b48a4a',
+            strokeWidth: '1.4',
+            strokeLinejoin: 'round',
+          }),
+          // Modak in hand
+          (0, n.jsx)('circle', {
+            cx: '30',
+            cy: '64',
+            r: '3.6',
+            fill: 'url(#aa-pg-gold)',
+            stroke: '#b48a4a',
+            strokeWidth: '0.9',
+          }),
+          // Right Tusk
+          (0, n.jsx)('path', {
+            d: 'M56 52 L59 55',
+            stroke: '#fdf6ee',
+            strokeWidth: '2.0',
+            strokeLinecap: 'round',
+          }),
+          // Sacred text below
+          (0, n.jsx)('text', {
+            x: '50',
+            y: '94',
+            textAnchor: 'middle',
+            fontFamily: j,
+            fontSize: '5.8',
+            fontWeight: '600',
+            letterSpacing: '0.4px',
+            fill: '#8b1e2a',
+            children: '|| श्री गणेशाय नमः ||',
+          }),
+          (0, n.jsx)('text', {
+            x: '50',
+            y: '104',
+            textAnchor: 'middle',
+            fontFamily: j,
+            fontSize: '4.8',
+            fontWeight: '500',
+            letterSpacing: '0.2px',
+            fill: '#7d5f2e',
+            children: 'शुभ लाभ',
+          }),
+        ],
       }),
     ],
   })
 }
-
 function at() {
   return (0, n.jsxs)('svg', {
     viewBox: '0 0 100 100',
@@ -1449,8 +1584,8 @@ function as({ onReveal: a }) {
     role: 'button',
     tabIndex: 0,
     'aria-label': o
-      ? 'Saturday, 12 December 2026 at Devraj Palace, Maheshwar'
-      : 'Scratch the gold to reveal the date — or press Enter',
+      ? '11 & 12 December 2026 at Devraj Palace, Maheshwar'
+      : 'Scratch the gold to reveal the dates — or press Enter',
     onKeyDown: (a) => {
       o || ('Enter' !== a.key && ' ' !== a.key) || (a.preventDefault(), m())
     },
@@ -1459,30 +1594,29 @@ function as({ onReveal: a }) {
         className: `aa-dateblock${o ? ' on' : ''}`,
         'aria-hidden': !o,
         children: [
-          (0, n.jsx)('p', { style: S(3.7, 0.5, u), children: 'December' }),
+          (0, n.jsx)('p', { style: S(3.6, 0.45, u), children: 'December 2026' }),
           (0, n.jsx)('p', {
             className: 'aa-foiltext',
             style: {
               fontFamily: j,
               fontWeight: 300,
-              fontSize: w(24),
+              fontSize: w(18),
               lineHeight: 0.95,
-              margin: `${w(0.4)} 0 ${w(0.2)}`,
+              margin: `${w(0.3)} 0 ${w(0.1)}`,
             },
-            children: '12',
+            children: '11 & 12',
           }),
-          (0, n.jsx)('p', { style: S(3.7, 0.5, u), children: '2026' }),
-          (0, n.jsx)(G, { w: 11, gap: 1.8, animate: !1 }),
-          (0, n.jsx)('p', { style: S(3.2, 0.42, y), children: 'Saturday' }),
+          (0, n.jsx)('p', { style: S(3.2, 0.38, y), children: 'Friday & Saturday' }),
+          (0, n.jsx)(G, { w: 11, gap: 1.4, animate: !1 }),
           (0, n.jsx)('p', {
             style: {
               fontFamily: j,
-              fontWeight: 500,
-              fontSize: w(4.0),
-              letterSpacing: '.12em',
-              paddingLeft: '.12em',
-              color: u,
-              margin: `${w(0.4)} 0 0`,
+              fontWeight: 600,
+              fontSize: w(3.8),
+              letterSpacing: '.1em',
+              paddingLeft: '.1em',
+              color: '#8b1e2a',
+              margin: `${w(0.3)} 0 0`,
             },
             children: 'Devraj Palace, Maheshwar',
           }),
@@ -2161,7 +2295,7 @@ export default function () {
                       margin: `0 auto ${w(0.3)}`,
                     },
                     children: [
-                      (0, n.jsx)(JainEmblem, { size: 11, delay: 0.1 }),
+                      (0, n.jsx)(JainSwastik, { size: 11, delay: 0.1 }),
                       (0, n.jsx)('div', {
                         style: {
                           width: '1px',
@@ -2170,7 +2304,7 @@ export default function () {
                           opacity: 0.8,
                         },
                       }),
-                      (0, n.jsx)(GaneshaEmblem, { size: 11, delay: 0.1 }),
+                      (0, n.jsx)(PastelGanesha, { size: 11, delay: 0.1 }),
                     ],
                   }),
                   (0, n.jsx)(B, {
@@ -2188,65 +2322,62 @@ export default function () {
                     delay: 0.45,
                     weight: 600,
                     style: { marginTop: w(0.12) },
-                    children: '|| जय जिनेंद्र ||  || शुभ विवाह ||  || राधे कृष्ण ||',
+                    children: '|| जय जिनेंद्र ||  || शुभ विवाह ||',
                   }),
                   (0, n.jsx)(G, { w: 14, delay: 0.6, gap: 1.0 }),
                   (0, n.jsx)(O, {
-                    size: 3.4,
+                    size: 3.3,
                     delay: 0.75,
                     color: y,
                     children: 'With the Divine Blessings of',
                   }),
                   (0, n.jsx)(B, {
-                    size: 3.2,
-                    track: 0.1,
-                    color: u,
-                    delay: 0.95,
-                    weight: 600,
-                    style: { margin: `${w(0.2)} 0 ${w(0.1)}` },
-                    children: 'Late Shri Devkinandan Ji Sharma',
-                  }),
-                  (0, n.jsx)(B, {
-                    size: 2.8,
-                    track: 0.08,
-                    color: y,
-                    delay: 1.1,
-                    weight: 500,
-                    children: '& Revered Ancestors of Jain & Sharma Families',
-                  }),
-                  (0, n.jsx)(G, { w: 12, delay: 1.25, gap: 1.0 }),
-                  (0, n.jsx)(O, {
                     size: 3.4,
-                    delay: 1.4,
+                    track: 0.12,
+                    color: u,
+                    delay: 0.9,
+                    weight: 600,
+                    style: { margin: `${w(0.15)} 0 ${w(0.05)}` },
+                    children: 'Shri Praveen Kumar Jain & Smt. Priti Ji Jain',
+                  }),
+                  (0, n.jsx)(O, {
+                    size: 3.1,
+                    delay: 1.05,
                     color: y,
-                    style: { marginTop: w(0.2) },
-                    children: 'We joyfully announce the auspicious wedding of',
+                    children: 'and the revered ancestors of the Jain & Sharma families',
+                  }),
+                  (0, n.jsx)(O, {
+                    size: 3.3,
+                    delay: 1.25,
+                    color: y,
+                    style: { marginTop: w(0.25) },
+                    children: 'cordially invite you to celebrate the wedding of their beloved daughter',
                   }),
                   (0, n.jsx)(X, {
                     size: 14.5,
-                    delay: 1.6,
+                    delay: 1.45,
                     color: '#8b1e2a',
                     style: {
-                      margin: `${w(0.3)} 0 ${w(0.1)}`,
+                      margin: `${w(0.25)} 0 ${w(0.1)}`,
                       textShadow: '0 2px 14px rgba(139,30,42,0.22)',
                       letterSpacing: '.02em',
                     },
                     children: 'Prachi Jain',
                   }),
                   (0, n.jsx)(O, {
-                    size: 3.4,
-                    delay: 1.8,
+                    size: 3.3,
+                    delay: 1.65,
                     color: y,
-                    children: '( D/o Smt. Priti Ji & Shri Praveen Kumar Jain )',
+                    children: '( D/o Smt. Priti Ji Jain & Shri Praveen Kumar Jain )',
                   }),
                   (0, n.jsx)('div', {
                     className: 'aa-r',
-                    style: { ...$(2.0), fontSize: w(3.8), color: b, margin: `${w(0.2)} 0` },
+                    style: { ...$(1.85), fontSize: w(3.6), color: b, margin: `${w(0.15)} 0` },
                     children: '♡',
                   }),
                   (0, n.jsx)(X, {
                     size: 14.5,
-                    delay: 2.2,
+                    delay: 2.05,
                     color: '#8b1e2a',
                     style: {
                       margin: `${w(0.1)} 0 ${w(0.1)}`,
@@ -2256,35 +2387,62 @@ export default function () {
                     children: 'Gopi Sharma',
                   }),
                   (0, n.jsx)(O, {
-                    size: 3.4,
-                    delay: 2.4,
+                    size: 3.3,
+                    delay: 2.25,
                     color: y,
-                    children: '( S/o Smt. Rekha Ji & Late Devkinandan Ji Sharma )',
+                    children: '( S/o Smt. Rekha Ji Sharma & Late Shri Devkinandan Ji Sharma )',
                   }),
-                  (0, n.jsx)(O, {
-                    size: 3.4,
-                    delay: 2.6,
-                    color: y,
-                    style: { marginTop: w(0.4) },
-                    children: 'Cordially invite you to join us for the wedding festivities',
+                  (0, n.jsxs)('div', {
+                    className: 'aa-r',
+                    style: {
+                      ...$(2.5),
+                      marginTop: w(0.8),
+                      padding: `${w(1.0)} ${w(3.2)}`,
+                      borderRadius: w(99),
+                      background: 'linear-gradient(135deg, rgba(255,255,255,0.94) 0%, rgba(247,236,214,0.96) 100%)',
+                      border: '1.4px solid rgba(176,141,87,0.8)',
+                      boxShadow: '0 6px 18px rgba(120,90,50,0.14)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: w(0.2),
+                    },
+                    children: [
+                      (0, n.jsx)(B, {
+                        size: 2.6,
+                        track: 0.34,
+                        color: x,
+                        weight: 600,
+                        children: 'CELEBRATION DATES',
+                      }),
+                      (0, n.jsx)('div', {
+                        style: {
+                          fontFamily: j,
+                          fontWeight: 700,
+                          fontSize: w(5.2),
+                          letterSpacing: '.12em',
+                          color: '#8b1e2a',
+                          textTransform: 'uppercase',
+                          lineHeight: 1.15,
+                        },
+                        children: '11 & 12 DECEMBER 2026',
+                      }),
+                      (0, n.jsx)(O, {
+                        size: 3.1,
+                        color: y,
+                        style: { fontStyle: 'italic', margin: 0 },
+                        children: 'Friday & Saturday · Devraj Palace, Maheshwar',
+                      }),
+                    ],
                   }),
                   (0, n.jsx)(B, {
-                    size: 3.3,
-                    track: 0.28,
-                    color: x,
+                    size: 2.6,
+                    track: 0.22,
+                    color: y,
                     delay: 2.8,
                     weight: 600,
-                    style: { marginTop: w(0.25) },
-                    children: '11 & 12 December 2026 · Devraj Palace, Maheshwar',
-                  }),
-                  (0, n.jsx)(B, {
-                    size: 2.7,
-                    track: 0.24,
-                    color: y,
-                    delay: 3.0,
-                    weight: 600,
                     style: { marginTop: w(0.4) },
-                    children: 'Scroll to explore the celebrations ↓',
+                    children: 'Scroll to explore the wedding itinerary ↓',
                   }),
                 ],
               }),
@@ -2545,7 +2703,7 @@ export default function () {
                             size: 3.8,
                             delay: 1.0,
                             color: x,
-                            children: '✨ Scratch the gold above to reveal the date ✨',
+                            children: '✨ Scratch the gold above to reveal the celebration dates ✨',
                           }),
                     ],
                   }),
@@ -2560,6 +2718,49 @@ export default function () {
                       gap: w(0.8),
                     },
                     children: [
+                      // 03:00 AM – Wedding (Listed first in chronological order as requested)
+                      (0, n.jsxs)('div', {
+                        style: {
+                          padding: `${w(1.0)} ${w(2.2)}`,
+                          background: 'linear-gradient(135deg, rgba(255,255,255,0.94) 0%, rgba(255,242,220,0.96) 100%)',
+                          border: '1.4px solid rgba(180,138,74,0.85)',
+                          borderRadius: w(2.0),
+                          boxShadow: '0 4px 14px rgba(120,90,50,0.12)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          gap: w(2),
+                        },
+                        children: [
+                          (0, n.jsxs)('div', {
+                            style: { textAlign: 'left' },
+                            children: [
+                              (0, n.jsx)('div', {
+                                style: { fontFamily: j, fontWeight: 700, fontSize: w(4.0), color: '#8b1e2a', letterSpacing: '.04em' },
+                                children: 'WEDDING (SHUBH VIVAH)',
+                              }),
+                              (0, n.jsx)('div', {
+                                style: { fontFamily: j, fontStyle: 'italic', fontSize: w(3.0), color: y },
+                                children: 'Auspicious midnight / early morning Pheras & Hast Melap',
+                              }),
+                            ],
+                          }),
+                          (0, n.jsx)('div', {
+                            style: {
+                              fontFamily: j,
+                              fontWeight: 700,
+                              fontSize: w(3.5),
+                              color: '#8b1e2a',
+                              whiteSpace: 'nowrap',
+                              padding: `${w(0.4)} ${w(1.2)}`,
+                              background: 'rgba(139,30,42,0.12)',
+                              borderRadius: w(99),
+                            },
+                            children: '03:00 AM (Ratri)',
+                          }),
+                        ],
+                      }),
+                      // 10:30 AM – Sagai & Vrindavan Yatra
                       (0, n.jsxs)('div', {
                         style: {
                           padding: `${w(1.0)} ${w(2.2)}`,
@@ -2601,6 +2802,7 @@ export default function () {
                           }),
                         ],
                       }),
+                      // 07:30 PM – Reception
                       (0, n.jsxs)('div', {
                         style: {
                           padding: `${w(1.0)} ${w(2.2)}`,
@@ -2639,47 +2841,6 @@ export default function () {
                               borderRadius: w(99),
                             },
                             children: '07:30 PM',
-                          }),
-                        ],
-                      }),
-                      (0, n.jsxs)('div', {
-                        style: {
-                          padding: `${w(1.0)} ${w(2.2)}`,
-                          background: 'linear-gradient(135deg, rgba(255,255,255,0.94) 0%, rgba(255,242,220,0.96) 100%)',
-                          border: '1.4px solid rgba(180,138,74,0.85)',
-                          borderRadius: w(2.0),
-                          boxShadow: '0 4px 14px rgba(120,90,50,0.12)',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          gap: w(2),
-                        },
-                        children: [
-                          (0, n.jsxs)('div', {
-                            style: { textAlign: 'left' },
-                            children: [
-                              (0, n.jsx)('div', {
-                                style: { fontFamily: j, fontWeight: 700, fontSize: w(4.0), color: '#8b1e2a', letterSpacing: '.04em' },
-                                children: 'SHUBH VIVAH (PHERAS)',
-                              }),
-                              (0, n.jsx)('div', {
-                                style: { fontFamily: j, fontStyle: 'italic', fontSize: w(3.0), color: y },
-                                children: 'Sacred wedding rituals, Hast Melap & Varmala',
-                              }),
-                            ],
-                          }),
-                          (0, n.jsx)('div', {
-                            style: {
-                              fontFamily: j,
-                              fontWeight: 700,
-                              fontSize: w(3.5),
-                              color: '#8b1e2a',
-                              whiteSpace: 'nowrap',
-                              padding: `${w(0.4)} ${w(1.2)}`,
-                              background: 'rgba(139,30,42,0.12)',
-                              borderRadius: w(99),
-                            },
-                            children: '03:00 AM (Ratri)',
                           }),
                         ],
                       }),
@@ -2774,43 +2935,52 @@ export default function () {
                     track: 0.42,
                     color: x,
                     delay: 1.0,
-                    children: 'Best Compliments From',
+                    children: 'Warmly Invited By',
+                  }),
+                  (0, n.jsx)(H, {
+                    text: 'Shri Praveen Kumar Jain & Smt. Priti Ji Jain',
+                    size: 5.8,
+                    delay: 1.2,
+                    caps: !1,
+                    color: '#8b1e2a',
+                    weight: 600,
+                    style: { margin: `${w(0.3)} 0 ${w(0.1)}` },
                   }),
                   (0, n.jsx)(X, {
-                    size: 9.0,
-                    delay: 1.2,
+                    size: 8.5,
+                    delay: 1.4,
                     color: b,
-                    style: { margin: `${w(0.3)} 0 ${w(0.1)}` },
-                    children: 'With Love & Respect,',
+                    style: { margin: `${w(0.2)} 0 ${w(0.1)}` },
+                    children: 'With Best Compliments From:',
                   }),
                   (0, n.jsx)(H, {
                     text: 'Jain & Sharma Families',
-                    size: 6.2,
-                    delay: 1.4,
+                    size: 6.0,
+                    delay: 1.6,
                     caps: !1,
                     color: u,
                     weight: 600,
                   }),
                   (0, n.jsx)(H, {
                     text: 'Friends & Relatives',
-                    size: 5.4,
-                    delay: 1.6,
+                    size: 5.2,
+                    delay: 1.8,
                     caps: !1,
                     color: y,
                   }),
-                  (0, n.jsx)(G, { w: 16, delay: 1.8, gap: 1.4 }),
+                  (0, n.jsx)(G, { w: 16, delay: 2.0, gap: 1.4 }),
                   (0, n.jsx)(B, {
                     size: 3.0,
                     track: 0.36,
                     color: '#8b1e2a',
-                    delay: 2.0,
+                    delay: 2.2,
                     weight: 700,
                     children: 'CONTACT FOR ANY ASSISTANCE',
                   }),
                   (0, n.jsxs)('div', {
                     className: 'aa-r',
                     style: {
-                      ...$(2.2),
+                      ...$(2.4),
                       width: 'min(92vw, calc(var(--u) * 78))',
                       margin: `${w(1.0)} auto 0`,
                       display: 'flex',
@@ -2943,7 +3113,7 @@ export default function () {
                       margin: `0 auto ${w(0.3)}`,
                     },
                     children: [
-                      (0, n.jsx)(JainEmblem, { size: 11, delay: 0.2 }),
+                      (0, n.jsx)(JainSwastik, { size: 11, delay: 0.2 }),
                       (0, n.jsx)('div', {
                         style: {
                           width: '1px',
@@ -2952,7 +3122,7 @@ export default function () {
                           opacity: 0.8,
                         },
                       }),
-                      (0, n.jsx)(GaneshaEmblem, { size: 11, delay: 0.2 }),
+                      (0, n.jsx)(PastelGanesha, { size: 11, delay: 0.2 }),
                     ],
                   }),
                   (0, n.jsx)(B, {
@@ -2970,7 +3140,7 @@ export default function () {
                     delay: 0.6,
                     weight: 600,
                     style: { marginTop: w(0.15) },
-                    children: '|| जय जिनेंद्र ||  || शुभ विवाह ||  || राधे कृष्ण ||',
+                    children: '|| जय जिनेंद्र ||  || शुभ विवाह ||',
                   }),
                   (0, n.jsx)(G, { w: 16, delay: 0.8, gap: 1.6 }),
                   (0, n.jsxs)(O, {
@@ -3009,37 +3179,29 @@ export default function () {
                     },
                     children: [
                       (0, n.jsx)(B, {
-                        size: 2.8,
+                        size: 2.6,
                         track: 0.42,
                         color: x,
                         weight: 600,
-                        children: 'WEDDING DATE',
+                        children: 'CELEBRATION DATES',
                       }),
                       (0, n.jsx)('div', {
                         style: {
                           fontFamily: j,
                           fontWeight: 700,
-                          fontSize: w(5.8),
-                          letterSpacing: '.18em',
+                          fontSize: w(5.6),
+                          letterSpacing: '.14em',
                           color: '#8b1e2a',
                           textTransform: 'uppercase',
                           lineHeight: 1.2,
                         },
-                        children: '12 · 12 · 2026',
+                        children: '11 & 12 DECEMBER 2026',
                       }),
                       (0, n.jsx)(O, {
                         size: 3.4,
                         color: y,
                         style: { fontStyle: 'italic', margin: 0 },
-                        children: 'Saturday, 12th December 2026',
-                      }),
-                      (0, n.jsx)(B, {
-                        size: 2.8,
-                        track: 0.16,
-                        color: u,
-                        weight: 600,
-                        style: { marginTop: w(0.2) },
-                        children: 'Devraj Palace, Maheshwar',
+                        children: 'Friday & Saturday · Devraj Palace, Maheshwar',
                       }),
                     ],
                   }),
