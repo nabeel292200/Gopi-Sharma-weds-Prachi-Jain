@@ -39,7 +39,7 @@ let d = '9c3fad15-3a8c-4eba-bb4e-ec65d5cf5306',
     start: new Date('2026-12-12T10:30:00+05:30'),
     end: new Date('2026-12-13T06:00:00+05:30'),
     location: 'Devraj Palace, Maheshwar',
-    details: 'Wedding Day celebrations: 10:30 AM Sagai & Vrindavan Yatra, 07:30 PM Reception, 03:00 AM (Ratri) Wedding Ceremony (Pheras). Venue: Devraj Palace, Maheshwar. https://maps.app.goo.gl/HxffQBvyxt5gVTgb6',
+    details: 'Wedding Day celebrations: 10:30 AM Sagai & Vrindavan Yatra, 06:00 PM Reception, 03:00 AM (Ratri) Wedding Ceremony (Pheras). Venue: Devraj Palace, Maheshwar. https://maps.app.goo.gl/HxffQBvyxt5gVTgb6',
     uid: `${d}-day2@zetron.tech`,
   },
   g = gDay2,
@@ -874,193 +874,21 @@ function JainSwastik({ size = 12, delay = 0.1 }) {
 }
 
 function PastelGanesha({ size = 12, delay = 0.1 }) {
-  return (0, n.jsxs)('div', {
+  return (0, n.jsx)('div', {
     className: 'aa-p',
-    style: {
-      ...$(delay),
-      position: 'relative',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    children: [
-      (0, n.jsx)('div', {
-        className: 'aa-halo',
-        style: {
-          width: w(size * 1.5),
-          height: w(size * 1.5),
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          background: 'radial-gradient(closest-side, rgba(255, 235, 175, 0.7), rgba(255, 235, 175, 0))',
-        },
-      }),
-      (0, n.jsxs)('svg', {
-        viewBox: '0 0 100 115',
-        style: {
-          width: w(size),
-          height: w(size * 1.15),
-          display: 'block',
-          position: 'relative',
-          zIndex: 2,
-          filter: 'drop-shadow(0 2px 6px rgba(140, 90, 30, 0.18))',
-        },
-        children: [
-          (0, n.jsxs)('defs', {
-            children: [
-              (0, n.jsxs)('linearGradient', {
-                id: 'aa-pg-gold',
-                x1: '0',
-                y1: '0',
-                x2: '1',
-                y2: '1',
-                children: [
-                  (0, n.jsx)('stop', { offset: '0%', stopColor: '#f7ebd2' }),
-                  (0, n.jsx)('stop', { offset: '50%', stopColor: '#d6b272' }),
-                  (0, n.jsx)('stop', { offset: '100%', stopColor: '#ba904c' }),
-                ],
-              }),
-              (0, n.jsxs)('linearGradient', {
-                id: 'aa-pg-body',
-                x1: '0',
-                y1: '0',
-                x2: '0',
-                y2: '1',
-                children: [
-                  (0, n.jsx)('stop', { offset: '0%', stopColor: '#fdf6ee' }),
-                  (0, n.jsx)('stop', { offset: '60%', stopColor: '#f7e7da' }),
-                  (0, n.jsx)('stop', { offset: '100%', stopColor: '#edd3c4' }),
-                ],
-              }),
-              (0, n.jsxs)('linearGradient', {
-                id: 'aa-pg-ear',
-                x1: '0',
-                y1: '0',
-                x2: '1',
-                y2: '0',
-                children: [
-                  (0, n.jsx)('stop', { offset: '0%', stopColor: '#f5e3d7' }),
-                  (0, n.jsx)('stop', { offset: '100%', stopColor: '#ebd0c5' }),
-                ],
-              }),
-            ],
-          }),
-          // Ganesha Crown (Mukut) in soft pastel gold
-          (0, n.jsx)('path', {
-            d: 'M38 28 L50 10 L62 28 Q50 25 38 28 Z',
-            fill: 'url(#aa-pg-gold)',
-            stroke: '#b48a4a',
-            strokeWidth: '1.2',
-          }),
-          (0, n.jsx)('circle', { cx: '50', cy: '8', r: '2.5', fill: '#c45d55' }),
-          (0, n.jsx)('circle', { cx: '50', cy: '19', r: '2.0', fill: '#fdf6ee' }),
-          // Left Ear (viewer left)
-          (0, n.jsx)('path', {
-            d: 'M38 34 C24 32 18 42 22 55 C26 62 34 60 36 56',
-            fill: 'url(#aa-pg-ear)',
-            stroke: '#b48a4a',
-            strokeWidth: '1.4',
-            strokeLinecap: 'round',
-          }),
-          // Right Ear (viewer right)
-          (0, n.jsx)('path', {
-            d: 'M62 34 C76 32 82 42 78 55 C74 62 66 60 64 56',
-            fill: 'url(#aa-pg-ear)',
-            stroke: '#b48a4a',
-            strokeWidth: '1.4',
-            strokeLinecap: 'round',
-          }),
-          // Face & Head in soft pastel peach
-          (0, n.jsx)('ellipse', {
-            cx: '50',
-            cy: '44',
-            rx: '14',
-            ry: '15',
-            fill: 'url(#aa-pg-body)',
-            stroke: '#b48a4a',
-            strokeWidth: '1.4',
-          }),
-          // Tilak / Trishul on Forehead
-          (0, n.jsx)('path', {
-            d: 'M46 32 Q50 36 54 32 Q50 34 46 32 Z',
-            fill: '#c45d55',
-          }),
-          (0, n.jsx)('line', {
-            x1: '50',
-            y1: '28',
-            x2: '50',
-            y2: '38',
-            stroke: '#c45d55',
-            strokeWidth: '1.8',
-            strokeLinecap: 'round',
-          }),
-          (0, n.jsx)('circle', { cx: '50', cy: '40', r: '1.5', fill: '#b48a4a' }),
-          // Eyes in gentle soft closed curves
-          (0, n.jsx)('path', {
-            d: 'M41 43 Q44 41 47 43',
-            fill: 'none',
-            stroke: '#6b4d36',
-            strokeWidth: '1.2',
-            strokeLinecap: 'round',
-          }),
-          (0, n.jsx)('path', {
-            d: 'M53 43 Q56 41 59 43',
-            fill: 'none',
-            stroke: '#6b4d36',
-            strokeWidth: '1.2',
-            strokeLinecap: 'round',
-          }),
-          // Trunk curving to left with delicate folds
-          (0, n.jsx)('path', {
-            d: 'M48 50 Q48 64 38 68 Q33 70 33 65 Q33 61 38 61 Q42 61 43 51',
-            fill: 'url(#aa-pg-body)',
-            stroke: '#b48a4a',
-            strokeWidth: '1.4',
-            strokeLinejoin: 'round',
-          }),
-          // Modak in hand
-          (0, n.jsx)('circle', {
-            cx: '30',
-            cy: '64',
-            r: '3.6',
-            fill: 'url(#aa-pg-gold)',
-            stroke: '#b48a4a',
-            strokeWidth: '0.9',
-          }),
-          // Right Tusk
-          (0, n.jsx)('path', {
-            d: 'M56 52 L59 55',
-            stroke: '#fdf6ee',
-            strokeWidth: '2.0',
-            strokeLinecap: 'round',
-          }),
-          // Sacred text below
-          (0, n.jsx)('text', {
-            x: '50',
-            y: '94',
-            textAnchor: 'middle',
-            fontFamily: j,
-            fontSize: '5.8',
-            fontWeight: '600',
-            letterSpacing: '0.4px',
-            fill: '#8b1e2a',
-            children: '|| श्री गणेशाय नमः ||',
-          }),
-          (0, n.jsx)('text', {
-            x: '50',
-            y: '104',
-            textAnchor: 'middle',
-            fontFamily: j,
-            fontSize: '4.8',
-            fontWeight: '500',
-            letterSpacing: '0.2px',
-            fill: '#7d5f2e',
-            children: 'शुभ लाभ',
-          }),
-        ],
-      }),
-    ],
+    style: { ...$(delay), position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' },
+    children: (0, n.jsx)('img', {
+      src: '/images/ganesha_pastel.png',
+      alt: 'Lord Ganesha',
+      style: {
+        width: w(size * 1.25),
+        height: 'auto',
+        display: 'block',
+        mixBlendMode: 'multiply',
+        WebkitMaskImage: 'radial-gradient(closest-side, #000 72%, transparent 100%)',
+        maskImage: 'radial-gradient(closest-side, #000 72%, transparent 100%)',
+      },
+    }),
   })
 }
 function at() {
@@ -2326,10 +2154,10 @@ export default function () {
                   }),
                   (0, n.jsx)(G, { w: 14, delay: 0.6, gap: 1.0 }),
                   (0, n.jsx)(O, {
-                    size: 3.3,
+                    size: 3.1,
                     delay: 0.75,
                     color: y,
-                    children: 'With the Divine Blessings of',
+                    children: 'With joy in their hearts and gratitude to the Almighty,',
                   }),
                   (0, n.jsx)(B, {
                     size: 3.4,
@@ -2340,18 +2168,16 @@ export default function () {
                     style: { margin: `${w(0.15)} 0 ${w(0.05)}` },
                     children: 'Shri Praveen Kumar Jain & Smt. Priti Ji Jain',
                   }),
-                  (0, n.jsx)(O, {
-                    size: 3.1,
+                  (0, n.jsxs)(O, {
+                    size: 3.3,
                     delay: 1.05,
                     color: y,
-                    children: 'and the revered ancestors of the Jain & Sharma families',
-                  }),
-                  (0, n.jsx)(O, {
-                    size: 3.3,
-                    delay: 1.25,
-                    color: y,
                     style: { marginTop: w(0.25) },
-                    children: 'cordially invite you to celebrate the wedding of their beloved daughter',
+                    children: [
+                      'cordially invite you to join the wedding celebrations',
+                      (0, n.jsx)('br', {}),
+                      'of their beloved daughter',
+                    ],
                   }),
                   (0, n.jsx)(X, {
                     size: 14.5,
@@ -2718,48 +2544,6 @@ export default function () {
                       gap: w(0.8),
                     },
                     children: [
-                      // 03:00 AM – Wedding (Listed first in chronological order as requested)
-                      (0, n.jsxs)('div', {
-                        style: {
-                          padding: `${w(1.0)} ${w(2.2)}`,
-                          background: 'linear-gradient(135deg, rgba(255,255,255,0.94) 0%, rgba(255,242,220,0.96) 100%)',
-                          border: '1.4px solid rgba(180,138,74,0.85)',
-                          borderRadius: w(2.0),
-                          boxShadow: '0 4px 14px rgba(120,90,50,0.12)',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          gap: w(2),
-                        },
-                        children: [
-                          (0, n.jsxs)('div', {
-                            style: { textAlign: 'left' },
-                            children: [
-                              (0, n.jsx)('div', {
-                                style: { fontFamily: j, fontWeight: 700, fontSize: w(4.0), color: '#8b1e2a', letterSpacing: '.04em' },
-                                children: 'WEDDING (SHUBH VIVAH)',
-                              }),
-                              (0, n.jsx)('div', {
-                                style: { fontFamily: j, fontStyle: 'italic', fontSize: w(3.0), color: y },
-                                children: 'Auspicious midnight / early morning Pheras & Hast Melap',
-                              }),
-                            ],
-                          }),
-                          (0, n.jsx)('div', {
-                            style: {
-                              fontFamily: j,
-                              fontWeight: 700,
-                              fontSize: w(3.5),
-                              color: '#8b1e2a',
-                              whiteSpace: 'nowrap',
-                              padding: `${w(0.4)} ${w(1.2)}`,
-                              background: 'rgba(139,30,42,0.12)',
-                              borderRadius: w(99),
-                            },
-                            children: '03:00 AM (Ratri)',
-                          }),
-                        ],
-                      }),
                       // 10:30 AM – Sagai & Vrindavan Yatra
                       (0, n.jsxs)('div', {
                         style: {
@@ -2802,7 +2586,7 @@ export default function () {
                           }),
                         ],
                       }),
-                      // 07:30 PM – Reception
+                      // 06:00 PM – Reception
                       (0, n.jsxs)('div', {
                         style: {
                           padding: `${w(1.0)} ${w(2.2)}`,
@@ -2840,7 +2624,49 @@ export default function () {
                               background: 'rgba(160,124,69,0.12)',
                               borderRadius: w(99),
                             },
-                            children: '07:30 PM',
+                            children: '06:00 PM',
+                          }),
+                        ],
+                      }),
+                      // 03:00 AM (night of 12th) – Wedding, listed last
+                      (0, n.jsxs)('div', {
+                        style: {
+                          padding: `${w(1.0)} ${w(2.2)}`,
+                          background: 'linear-gradient(135deg, rgba(255,255,255,0.94) 0%, rgba(255,242,220,0.96) 100%)',
+                          border: '1.4px solid rgba(180,138,74,0.85)',
+                          borderRadius: w(2.0),
+                          boxShadow: '0 4px 14px rgba(120,90,50,0.12)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          gap: w(2),
+                        },
+                        children: [
+                          (0, n.jsxs)('div', {
+                            style: { textAlign: 'left' },
+                            children: [
+                              (0, n.jsx)('div', {
+                                style: { fontFamily: j, fontWeight: 700, fontSize: w(4.0), color: '#8b1e2a', letterSpacing: '.04em' },
+                                children: 'WEDDING (SHUBH VIVAH)',
+                              }),
+                              (0, n.jsx)('div', {
+                                style: { fontFamily: j, fontStyle: 'italic', fontSize: w(3.0), color: y },
+                                children: 'Auspicious midnight / early morning Pheras & Hast Melap',
+                              }),
+                            ],
+                          }),
+                          (0, n.jsx)('div', {
+                            style: {
+                              fontFamily: j,
+                              fontWeight: 700,
+                              fontSize: w(3.5),
+                              color: '#8b1e2a',
+                              whiteSpace: 'nowrap',
+                              padding: `${w(0.4)} ${w(1.2)}`,
+                              background: 'rgba(139,30,42,0.12)',
+                              borderRadius: w(99),
+                            },
+                            children: '03:00 AM (Ratri)',
                           }),
                         ],
                       }),
@@ -2954,7 +2780,7 @@ export default function () {
                     children: 'With Best Compliments From:',
                   }),
                   (0, n.jsx)(H, {
-                    text: 'Jain & Sharma Families',
+                    text: 'Jain Family & Relatives',
                     size: 6.0,
                     delay: 1.6,
                     caps: !1,
