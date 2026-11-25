@@ -1412,8 +1412,8 @@ function as({ onReveal: a }) {
     role: 'button',
     tabIndex: 0,
     'aria-label': o
-      ? '11 & 12 December 2026 at Devraj Palace, Maheshwar'
-      : 'Scratch the gold to reveal the dates — or press Enter',
+      ? 'Countdown to the celebrations'
+      : 'Scratch the gold to reveal the countdown — or press Enter',
     onKeyDown: (a) => {
       o || ('Enter' !== a.key && ' ' !== a.key) || (a.preventDefault(), m())
     },
@@ -1422,32 +1422,9 @@ function as({ onReveal: a }) {
         className: `aa-dateblock${o ? ' on' : ''}`,
         'aria-hidden': !o,
         children: [
-          (0, n.jsx)('p', { style: S(3.6, 0.45, u), children: 'December 2026' }),
-          (0, n.jsx)('p', {
-            className: 'aa-foiltext',
-            style: {
-              fontFamily: j,
-              fontWeight: 300,
-              fontSize: w(18),
-              lineHeight: 0.95,
-              margin: `${w(0.3)} 0 ${w(0.1)}`,
-            },
-            children: '11 & 12',
-          }),
-          (0, n.jsx)('p', { style: S(3.2, 0.38, y), children: 'Friday & Saturday' }),
-          (0, n.jsx)(G, { w: 11, gap: 1.4, animate: !1 }),
-          (0, n.jsx)('p', {
-            style: {
-              fontFamily: j,
-              fontWeight: 600,
-              fontSize: w(3.8),
-              letterSpacing: '.1em',
-              paddingLeft: '.1em',
-              color: '#8b1e2a',
-              margin: `${w(0.3)} 0 0`,
-            },
-            children: 'Devraj Palace, Maheshwar',
-          }),
+          (0, n.jsx)('p', { style: S(3.4, 0.4, u), children: 'Countdown to the celebrations' }),
+          (0, n.jsx)(G, { w: 11, gap: 1.2, animate: !1 }),
+          (0, n.jsx)('div', { style: { transform: 'scale(0.9)', margin: `${w(0.6)} 0` }, children: (0, n.jsx)(al, {}) }),
         ],
       }),
       (0, n.jsx)('canvas', {
@@ -1502,7 +1479,7 @@ function as({ onReveal: a }) {
               position: 'relative',
               textShadow: '0 1px 0 rgba(255,238,196,.7)',
             },
-            children: 'our date',
+            children: 'the countdown',
           }),
           (0, n.jsx)('svg', {
             className: 'aa-finger',
@@ -1575,7 +1552,7 @@ function al() {
   return (0, n.jsx)('div', {
     className: 'aa-tab',
     role: 'timer',
-    'aria-label': 'Countdown to the engagement',
+    'aria-label': 'Countdown to the celebrations',
     children: i.map(([a, e]) =>
       (0, n.jsxs)(
         'div',
@@ -2188,7 +2165,7 @@ export default function () {
                       textShadow: '0 2px 14px rgba(139,30,42,0.22)',
                       letterSpacing: '.02em',
                     },
-                    children: 'Prachi Jain',
+                    children: 'Prachi',
                   }),
                   (0, n.jsx)(O, {
                     size: 3.3,
@@ -2210,7 +2187,7 @@ export default function () {
                       textShadow: '0 2px 14px rgba(139,30,42,0.22)',
                       letterSpacing: '.02em',
                     },
-                    children: 'Gopi Sharma',
+                    children: 'Gopi',
                   }),
                   (0, n.jsx)(O, {
                     size: 3.3,
@@ -2524,12 +2501,12 @@ export default function () {
                     },
                     children: [
                       t
-                        ? (0, n.jsx)(al, {})
+                        ? (0, n.jsx)(H, { text: '12th December, Saturday', size: 6.4, delay: 0.2, caps: !1, color: '#8b1e2a', weight: 700 })
                         : (0, n.jsx)(O, {
                             size: 3.8,
                             delay: 1.0,
                             color: x,
-                            children: '✨ Scratch the gold above to reveal the celebration dates ✨',
+                            children: '✨ Scratch the gold above to reveal the countdown ✨',
                           }),
                     ],
                   }),
