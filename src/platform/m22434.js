@@ -149,6 +149,8 @@ let N = (a) => Math.round(100 * a) / 100,
 .aa-kb{position:absolute;inset:0;animation:aa-breathe 26s ease-in-out infinite alternate;transform-origin:50% 50%}
 .aa-page:not(.aa-in) .aa-kb{animation-play-state:paused}
 .aa-img{position:absolute;inset:0;width:100%;height:100%;display:block;user-select:none;-webkit-user-select:none;pointer-events:none}
+#aa-photo1 .aa-img,#aa-photo2 .aa-img{object-fit:cover;object-position:50% 60%}
+.aa-shade{position:absolute;left:0;right:0;bottom:0;height:34%;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(30,14,10,0),rgba(30,14,10,.62))}
 .aa-fx{transform:scaleX(-1)}.aa-fy{transform:scaleY(-1)}.aa-fxy{transform:scale(-1,-1)}
 .aa-copy{position:absolute;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
 .aa-wash::before{content:'';position:absolute;inset:-5% -9%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(248,241,231,.86),rgba(248,241,231,.6) 62%,rgba(248,241,231,0))}
@@ -873,6 +875,34 @@ function JainSwastik({ size = 12, delay = 0.1 }) {
   })
 }
 
+function PhotoPage({ id, src, label, line }) {
+  return (0, n.jsx)(q, {
+    id,
+    art: src,
+    label,
+    overlays: (0, n.jsx)('div', { className: 'aa-shade' }),
+    children: (0, n.jsxs)(J, {
+      top: 76,
+      bottom: 4,
+      children: [
+        (0, n.jsx)(X, {
+          size: 9,
+          delay: 0.3,
+          color: '#fff6ea',
+          style: { textShadow: '0 2px 14px rgba(0,0,0,.45)' },
+          children: 'Prachi & Gopi',
+        }),
+        (0, n.jsx)(O, {
+          size: 3.6,
+          delay: 0.8,
+          color: 'rgba(255,246,234,.92)',
+          style: { textShadow: '0 1px 10px rgba(0,0,0,.5)' },
+          children: line,
+        }),
+      ],
+    }),
+  })
+}
 function PastelGanesha({ size = 12, delay = 0.1 }) {
   return (0, n.jsx)('div', {
     className: 'aa-p',
@@ -2714,6 +2744,12 @@ export default function () {
                 ],
               }),
             }),
+            (0, n.jsx)(PhotoPage, {
+              id: 'aa-photo1',
+              src: '/images/couple-1.jpg',
+              label: 'Prachi & Gopi',
+              line: 'Two hearts, one beautiful journey',
+            }),
             (0, n.jsx)(q, {
               id: 'aa-family',
               art: p.floral,
@@ -2864,6 +2900,12 @@ export default function () {
                   }),
                 ],
               }),
+            }),
+            (0, n.jsx)(PhotoPage, {
+              id: 'aa-photo2',
+              src: '/images/couple-2.jpg',
+              label: 'Prachi & Gopi',
+              line: 'Forever begins with you',
             }),
             (0, n.jsx)(q, {
               id: 'aa-rsvp',
